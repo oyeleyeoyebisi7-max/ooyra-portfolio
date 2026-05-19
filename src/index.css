@@ -1,0 +1,174 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#050505;
+  color:white;
+  font-family:'Inter',sans-serif;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+.container{
+  width:min(1200px,90%);
+  margin:auto;
+}
+
+section{
+  padding:120px 0;
+}
+
+.btn{
+  background:#B6FF00;
+  color:black;
+  padding:16px 28px;
+  border-radius:50px;
+  font-weight:700;
+  transition:0.3s;
+  display:inline-block;
+}
+
+.btn:hover{
+  transform:translateY(-4px);
+}
+
+.btn-outline{
+  border:1px solid #c200ff;
+  padding:16px 28px;
+  border-radius:50px;
+  transition:0.3s;
+  display:inline-block;
+}
+
+.btn-outline:hover{
+  background:#c200ff;
+}
+
+.grid{
+  display:grid;
+  gap:30px;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.hero h1{
+  font-size:80px;
+  line-height:1;
+  margin:20px 0;
+}
+
+.green{
+  color:#B6FF00;
+}
+
+.purple{
+  color:#c200ff;
+}
+
+.text{
+  color:#9f9f9f;
+  line-height:1.8;
+  font-size:18px;
+}
+
+.card{
+  border:1px solid #222;
+  border-radius:30px;
+  overflow:hidden;
+  transition:0.3s;
+  background:#0c0c0c;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  border-color:#c200ff;
+}
+
+.card img{
+  height:280px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:25px;
+}
+
+.section-title{
+  font-size:52px;
+  margin-bottom:20px;
+}
+
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+.skill{
+  border:1px solid #222;
+  padding:16px 22px;
+  border-radius:40px;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.contact-card{
+  border:1px solid #222;
+  border-radius:30px;
+  padding:40px;
+  text-align:center;
+}
+
+footer{
+  border-top:1px solid #151515;
+  padding:40px 0;
+  text-align:center;
+  color:#777;
+}
+
+@media(max-width:900px){
+
+.hero-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:52px;
+}
+
+.section-title{
+font-size:38px;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
